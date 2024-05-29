@@ -1,0 +1,99 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html-tasks</title>
+    <style>
+      
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .first {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            gap: 20px;
+        }
+        .navbar {
+            background-color: black;
+            text-align: center;
+            padding: 10px; 
+            margin-bottom: 5%;
+        }
+        .text {
+            text-align: center;
+            color: white;
+        }
+        .texts {
+            text-align: center;
+            color: blueviolet;
+        }
+
+ 
+        @media only screen and (min-width: 768px) {
+            .border {
+                width: 45%; 
+            }
+        }
+        @media only screen and (min-width: 1200px) {
+            .border {
+                width: 30%; 
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            .first {
+                flex-direction: column; 
+                align-items: center; 
+            }
+            .border {
+                width: 80%;
+                margin-bottom: 20px; 
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div class="navbar">
+        <h1 class="text">Restaurant</h1>
+    </div>
+    <Marquee> <h1 style="color: blueviolet;">Welcome to our restaurant! <span style="color: red;">Flat 50% off</span> for today's orders</h1></Marquee>
+    <div>
+        <div class="first">
+            <div class="border">
+                <a href="veg.html">
+                    <img src="./veg.jpg" width="100%" height="50%"/>
+                </a> 
+                <p class="texts">VEG ITEMS</p>
+            </div>
+    
+            <div class="border">
+                <a href="nonveg.html">
+                    <img src="./non veg.jpg" width="100%" height="50%"/> 
+                </a>
+                <p class="texts">NON-VEG ITEMS</p>
+            </div>
+    
+            <div class="border">
+                <a href="dessart.html">
+                <img src="dessart.jpg" width="100%" height="50%"/>
+            </a>
+                <p class="texts">DESSERTS</p>
+            </div>
+        </div>
+    </div>
+    
+</section>
+</body>
+</html>
